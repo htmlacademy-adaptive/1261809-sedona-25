@@ -23,6 +23,9 @@
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Седона. Форма обратной связи</h1>
+  <div class="page-main__intro intro">
+    <img class="intro__image" src="img/intro.svg" alt="sedona">
+  </div>
   <div class="page-main__advertising advertising">
     <h2 class="advertising__title">Оставьте свой отзыв</h2>
     <p class="advertising__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
@@ -33,11 +36,11 @@
       <legend class="feedback-form__section-title">Представьтесь:</legend>
       <label class="feedback-form__input-field input-field input-field--row">
         <span class="input-field__label label label--required label--capitalized">Имя</span>
-        <input class="input-field__input input" type="text" placeholder="имя" name="name">
+        <input class="input-field__input input" type="text" required placeholder="имя" name="name">
       </label>
       <label class="feedback-form__input-field input-field input-field--row">
         <span class="input-field__label label label--required label--capitalized">Фамилия</span>
-        <input class="input-field__input input" type="text" placeholder="фамилия" name="last-name">
+        <input class="input-field__input input" type="text" required placeholder="фамилия" name="last-name">
       </label>
       <label class="feedback-form__input-field input-field input-field--row">
         <span class="input-field__label label label--capitalized">Отчество</span>
@@ -48,21 +51,13 @@
       <legend class="feedback-form__section-title">Контактная информация:</legend>
       <label class="feedback-form__input-field input-field input-field--column">
         <span class="input-field__label label label--required label--capitalized">Контактный телефон</span>
-        <div class="input-field__wrapper">
-          <input class="input-field__input input" type="tel" placeholder="Введите телефон" name="phone">
-          <svg class="input-field__icon" width="18" height="18">
-            <use xlink:href="img/sprite-icons.svg#phone"></use>
-          </svg>
-        </div>
+        <input class="input-field__input input input--phone" type="tel" required placeholder="Введите телефон"
+               name="phone">
       </label>
       <label class="feedback-form__input-field input-field input-field--column">
         <span class="input-field__label label label--required label--capitalized">Электронная почта</span>
-        <div class="input-field__wrapper">
-          <input class="input-field__input input" type="email" placeholder="Введите e-mail" name="email">
-          <svg class="input-field__icon" width="18" height="18">
-            <use xlink:href="img/sprite-icons.svg#phone"></use>
-          </svg>
-        </div>
+        <input class="input-field__input input input-email" type="email" required placeholder="Введите e-mail"
+               name="email">
       </label>
     </fieldset>
     <fieldset class="feedback-form__section">
@@ -102,11 +97,14 @@
     <fieldset class="feedback-form__section">
       <legend class="feedback-form__section-title">Опишите свои эмоции:</legend>
       <label class="feedback-form__textarea-field textarea-field">
-        <textarea class="textarea-field textarea" name="sights"
-                  placeholder="Опишите подробно все свои восторги"></textarea>
+        <textarea class="textarea-field textarea" name="review"
+                  placeholder="Опишите подробно все свои восторги">
+
+        </textarea>
       </label>
     </fieldset>
     <button class="feedback-form__button-submit button" type="submit">Отправить отзыв</button>
+    <span class="feedback-form__tooltip">* — обязательные поля</span>
   </form>
 </main>
 <footer class="page-footer">
