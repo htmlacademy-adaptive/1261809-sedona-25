@@ -1,0 +1,15 @@
+.dev-info__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $font-color-primary;
+}
+
+.dev-info__link-icon {
+  margin-left: 15px;
+}
+
+.dev-info__link-text {
+  @include font-m;
+  text-transform: uppercase;
+}

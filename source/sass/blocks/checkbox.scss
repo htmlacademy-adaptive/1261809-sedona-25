@@ -1,0 +1,37 @@
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 46px;
+}
+
+.checkbox__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: $background-input-primary;
+}
+
+.checkbox__label {
+  padding-left: 62px;
+}
+
+.checkbox__input {
+  position: absolute;
+  appearance: none;
+
+  &:checked + .checkbox__icon {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 15px;
+      left: 12px;
+      width: 23px;
+      height: 16px;
+      background-image: url("../img/checked.svg");
+    }
+  }
+}

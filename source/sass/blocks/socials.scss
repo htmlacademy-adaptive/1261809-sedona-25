@@ -1,0 +1,25 @@
+.socials__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.socials__item {
+  &:not(:first-child) {
+    margin-left: 6px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: $background-primary;
+}
+
+.socials__icon {
+  fill: $font-color-secondary;
+}

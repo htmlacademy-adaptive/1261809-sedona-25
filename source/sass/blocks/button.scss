@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  border: none;
+
+  @include font-l;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.button--primary {
+  color: $font-color-secondary;
+  background-color: $background-primary;
+}
+
+.button--link {
+  text-decoration: none;
+}

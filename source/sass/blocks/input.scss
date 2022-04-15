@@ -1,0 +1,38 @@
+.input {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  padding: 16px;
+  width: 100%;
+  background-color: $background-input-primary;
+  border: none;
+
+  @include font-m;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: $font-color-primary;
+
+  &::placeholder {
+    font-weight: bold;
+    color: $font-color-primary;
+  }
+}
+
+.input--image-label {
+  padding-right: 74px;
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &::placeholder {
+    font-weight: bold;
+    color: fade-out($font-color-primary, 0.7);
+  }
+}
+
+.input--phone {
+  background-image: url("../img/phone.svg");
+}
+
+.input--email {
+  background-image: url("../img/email.svg");
+}

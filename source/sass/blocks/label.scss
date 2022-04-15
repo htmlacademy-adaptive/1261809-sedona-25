@@ -1,0 +1,13 @@
+.label {
+  @include font-s;
+  color: $label-color;
+}
+
+.label--bold {
+  font-weight: bold;
+}
+
+
+.label--uppercase {
+  text-transform: uppercase;
+}

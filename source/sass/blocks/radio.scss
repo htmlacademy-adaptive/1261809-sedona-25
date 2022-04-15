@@ -1,0 +1,39 @@
+.radio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 46px;
+}
+
+.radio__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $background-input-primary;
+}
+
+.radio__label {
+  padding-left: 62px;
+}
+
+.radio__input {
+  position: absolute;
+  appearance: none;
+
+  &:checked + .radio__icon {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $label-color;
+    }
+  }
+}

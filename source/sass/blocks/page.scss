@@ -1,0 +1,15 @@
+.page {
+  margin: auto;
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 1200px;
+}
+
+.page__body {
+  margin: 0;
+
+  @include font-s;
+  font-family: $font-primary;
+  font-weight: normal;
+  color: $font-color-primary;
+}

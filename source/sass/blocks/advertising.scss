@@ -1,0 +1,19 @@
+.advertising {
+  padding: 32px 18px;
+  text-align: center;
+}
+
+.advertising__title {
+  margin: 0;
+
+  @include font-m;
+  text-transform: uppercase;
+}
+
+.advertising__description {
+  margin: 0;
+  padding-top: 35px;
+
+  @include font-s;
+  text-transform: uppercase;
+}
