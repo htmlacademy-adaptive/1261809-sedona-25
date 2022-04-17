@@ -3,19 +3,28 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="page-header">
   <a href="" class="page-header__logo">
-    <img class="page-header__logo-image" width="102" height="84" src="img/logo.svg" alt="logo">
+    <img class="page-header__logo-image" width="185" height="96" src="img/logo.svg" alt="logo">
   </a>
-  <button class="page-header__toggle-button toggle-button toggle-button--active"></button>
   <nav class="page-header__menu menu">
-    <ul class="menu__list menu__list--hidden">
+    <button class="menu__toggle-button toggle-button toggle-button--active"></button>
+    <ul class="menu__list">
       <li class="menu__item">
         <a href="#" class="menu__item-link">Главная</a>
+      </li>
+      <li class="menu__item">
         <a href="#" class="menu__item-link">Фото и видео</a>
+      </li>
+      <li class="menu__item menu__item-empty">
+      </li>
+      <li class="menu__item">
         <a href="#" class="menu__item-link">Форма Отзыва</a>
+      </li>
+      <li class="menu__item">
         <a href="#" class="menu__item-link">HTML ACADEMY</a>
       </li>
     </ul>
@@ -24,62 +33,78 @@
 <main class="page-main">
   <h1 class="visually-hidden">Все о Седоне</h1>
   <div class="page-main__intro intro">
-    <img class="intro__image" src="img/intro-extra.svg" alt="sedona">
+    <img class="intro__image" width="100%" src="img/intro-extra.svg" alt="sedona">
   </div>
   <div class="page-main__advertising advertising">
     <h2 class="advertising__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
     <p class="advertising__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
   </div>
   <section class="page-main__advantages advantages">
-    <article class="advantages__advantage-card advantage-card advantage-card--primary">
-      <h3 class="advantage-card__title">настоящий городок</h3>
-      <span class="advantage-card__number">№1</span>
-      <p class="advantage-card__description">седона не аттракцион для туристов, там течет своя жизнь</p>
-    </article>
-    <img class="advantages__image" src="img/photo-city@1x.png" alt="city">
+    <div class="advantages__card-image-wrapper">
+      <article class="advantage-card advantage-card--primary advantage-card--decorate">
+        <h3 class="advantage-card__title">настоящий городок</h3>
+        <span class="advantage-card__number"> - №1 - </span>
+        <p class="advantage-card__description">седона не аттракцион для туристов, там течет своя жизнь</p>
+      </article>
+      <img class="advantages__image" src="img/photo-city@1x.png" alt="city">
+    </div>
     <div class="advantages__features">
       <article class="advantages__feature-card">
-        <svg class="advantages__feature-icon">
-          <use xlink:href="img/sprite-icons.svg#house"></use>
-        </svg>
-        <h3 class="advantages__feature-title">Жилье</h3>
-        <p class="advantages__feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <div class="advantages__feature-icon-wrapper">
+          <svg class="advantages__feature-icon">
+            <use xlink:href="img/sprite-icons.svg#house"></use>
+          </svg>
+        </div>
+        <div class="advantages__feature-content-wrapper">
+          <h3 class="advantages__feature-title">Жилье</h3>
+          <p class="advantages__feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
       </article>
       <article class="advantages__feature-card">
-        <svg class="advantages__feature-icon">
-          <use xlink:href="img/sprite-icons.svg#gift"></use>
-        </svg>
-        <h3 class="advantages__feature-title">Сувениры</h3>
-        <p class="advantages__feature-description">Не только китайского, но и местного производства!</p>
+        <div class="advantages__feature-icon-wrapper">
+          <svg class="advantages__feature-icon">
+            <use xlink:href="img/sprite-icons.svg#gift"></use>
+          </svg>
+        </div>
+        <div class="advantages__feature-content-wrapper">
+          <h3 class="advantages__feature-title">Сувениры</h3>
+          <p class="advantages__feature-description">Не только китайского, но и местного производства!</p>
+        </div>
       </article>
       <article class="advantages__feature-card">
-        <svg class="advantages__feature-icon">
-          <use xlink:href="img/sprite-icons.svg#burger"></use>
-        </svg>
-        <h3 class="advantages__feature-title">Еда</h3>
-        <p class="advantages__feature-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+        <div class="advantages__feature-icon-wrapper">
+          <svg class="advantages__feature-icon">
+            <use xlink:href="img/sprite-icons.svg#burger"></use>
+          </svg>
+        </div>
+        <div class="advantages__feature-content-wrapper">
+          <h3 class="advantages__feature-title">Еда</h3>
+          <p class="advantages__feature-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+        </div>
       </article>
     </div>
-    <article class="advantages__advantage-card advantage-card advantage-card--primary">
-      <h3 class="advantage-card__title">Там есть мост дьявола</h3>
-      <span class="advantage-card__number">№2</span>
-      <p class="advantage-card__description">Да, по нему можно пройти! Если вы осмелитесь конечно</p>
-    </article>
-    <img class="advantages__image" src="img/photo-bridge@1x.png" alt="bridge">
+    <div class="advantages__card-image-wrapper">
+      <article class="advantage-card advantage-card--primary">
+        <h3 class="advantage-card__title">Там есть мост дьявола</h3>
+        <span class="advantage-card__number"> - №2 - </span>
+        <p class="advantage-card__description">Да, по нему можно пройти! Если вы осмелитесь конечно</p>
+      </article>
+      <img class="advantages__image" src="img/photo-bridge@1x.png" alt="bridge">
+    </div>
     <div class="advantages__advantages-card-list">
-      <article class="advantage-card advantage-card--secondary">
+      <article class="advantage-card advantage-card__item-wrapper advantage-card--secondary">
         <h3 class="advantage-card__title">Небольшая площадь</h3>
-        <span class="advantage-card__number">№3</span>
+        <span class="advantage-card__number"> - №3 - </span>
         <p class="advantage-card__description">Все интересные места находятся очень близко</p>
       </article>
-      <article class="advantage-card advantage-card--secondary">
+      <article class="advantage-card advantage-card__item-wrapper advantage-card--secondary">
         <h3 class="advantage-card__title">Красивая дорога</h3>
-        <span class="advantage-card__number">№4</span>
+        <span class="advantage-card__number"> - №4 - </span>
         <p class="advantage-card__description">Ехать в седону из лас-вегаса совсем не скучно</p>
       </article>
-      <article class="advantage-card advantage-card--secondary">
+      <article class="advantage-card advantage-card__item-wrapper advantage-card--secondary">
         <h3 class="advantage-card__title">Мало туристов</h3>
-        <span class="advantage-card__number">№5</span>
+        <span class="advantage-card__number"> - №5 - </span>
         <p class="advantage-card__description">Большинство едет в гранд каньон и толпится там</p>
       </article>
     </div>
@@ -88,7 +113,7 @@
     <h2 class="proposal__title">Заинтересовались?</h2>
     <p class="proposal__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
       седоне</p>
-    <a class="proposal__link button button--primary" href="#">Найти гостиницу</a>
+    <a class="proposal__link button button--primary button--link" href="#">Найти гостиницу</a>
   </div>
   <div class="page-main__map"></div>
 </main>

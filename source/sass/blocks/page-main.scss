@@ -1,0 +1,22 @@
+.page-main__advantages {
+  position: relative;
+}
+
+.page-main__advantages-divider {
+  display: block;
+  position: absolute;
+  top: -16px;
+  right: 0;
+
+  @include medium-size {
+    display: none;
+  }
+}
+
+.page-main__posts-list {
+  margin-top: 20px;
+}
+
+.page-main__video-player {
+  margin-top: 6px;
+}

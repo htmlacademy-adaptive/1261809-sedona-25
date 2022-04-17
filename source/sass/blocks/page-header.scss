@@ -1,0 +1,21 @@
+.page-header {
+  position: relative;
+  height: 56px;
+  background-color: $background-secondary;
+
+  @include medium-size {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.page-header__logo {
+  left: 50%;
+  top: 0;
+  position: absolute;
+  transform: translateX(-50%);
+
+  @include medium-size {
+    z-index: $z-index-dropdown + 1;
+  }
+}

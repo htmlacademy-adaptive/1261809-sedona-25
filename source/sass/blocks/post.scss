@@ -1,0 +1,56 @@
+.post {
+  padding: 24px 20px;
+  border-top: 1px solid $background-primary-disabled;
+
+  &:last-child {
+    border-bottom: 1px solid $background-primary-disabled;
+  }
+}
+
+.post__image {
+  width: 100%;
+}
+
+.post__content {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post__title {
+  margin: 0;
+
+  @include font-s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.post__owner {
+  margin-top: 4px;
+}
+
+.post__favorite {
+  margin-top: 16px;
+  position: relative;
+}
+
+.post__favorite-button {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.post__favorite-icon {
+  opacity: 0.3;
+  fill: $font-primary;
+}
+
+.post__favorites-count {
+  @include font-s;
+  font-weight: bold;
+  padding-left: 42px;
+}

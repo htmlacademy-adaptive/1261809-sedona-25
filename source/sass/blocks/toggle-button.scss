@@ -1,0 +1,16 @@
+.toggle-button {
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 23px 22px;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+}
+
+.toggle-button--active {
+  background-size: 23px 23px;
+  background-image: url("../../img/icon-cross.svg");
+}

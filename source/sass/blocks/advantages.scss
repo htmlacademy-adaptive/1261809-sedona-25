@@ -1,0 +1,62 @@
+.advantages__card-image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__advantages-card-list {
+  background-color: #eeeeee;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__features {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 18px 52px;
+}
+
+.advantages__feature-card {
+  display: flex;
+
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+.advantages__feature-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  //костыль, не ясно как управлять размерамии svg из css
+}
+
+.advantages__feature-icon {
+  fill: $background-primary;
+}
+
+.advantages__feature-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.advantages__feature-title {
+  position: relative;
+  top: 8px;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include font-l;
+}
+
+.advantages__feature-description {
+  margin-top: 16px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+
+  @include font-s;
+}

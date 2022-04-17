@@ -1,0 +1,18 @@
+.textarea {
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: $background-input-primary;
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 100%;
+
+  @include font-m;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+
+  &::placeholder {
+    font-weight: bold;
+    color: fade-out($font-color-primary, 0.7);
+  }
+}

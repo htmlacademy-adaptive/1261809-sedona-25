@@ -1,0 +1,23 @@
+.proposal {
+  padding: 39px 18px 49px;
+  text-align: center;
+}
+
+.proposal__title {
+  margin: 0;
+
+  @include font-l;
+  text-transform: uppercase;
+}
+
+.proposal__description {
+  margin-top: 20px; //нужно проверять, сделано на глоз
+  margin-bottom: 0;
+
+  @include font-s;
+  text-transform: uppercase;
+}
+
+.proposal__link {
+  margin-top: 32px;
+}

@@ -1,0 +1,37 @@
+@mixin large-size {
+  @media (min-width: $large-width) {
+    @content;
+  }
+}
+
+@mixin medium-size {
+  @media (min-width: $medium-width) {
+    @content;
+  }
+}
+
+@mixin small-size {
+  @media (max-width: $small-width) {
+    @content;
+  }
+}
+
+@mixin font-s {
+  font-size: $font-size-s;
+  line-height: $line-height-s;
+}
+
+@mixin font-m {
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+}
+
+@mixin font-l {
+  font-size: $font-size-l;
+  line-height: $line-height-l;
+}
+
+@mixin font-xl {
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+}
