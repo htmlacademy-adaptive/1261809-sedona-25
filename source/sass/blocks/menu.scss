@@ -8,6 +8,10 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  @include medium-size {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -57,8 +61,11 @@
 
 .menu__item-link {
   display: block;
-  padding: 17px 0 12px;
   text-align: center;
+
+  @include small-size {
+    padding: 17px 0 12px;
+  }
 
   @include font-m;
   font-weight: bold;
@@ -68,8 +75,15 @@
   color: $font-color-secondary;
 
   @include medium-size {
+    @include font-s;
     color: $font-color-primary;
     background-color: transparent;
-    padding: 12px 0 12px;
+    padding: 6px;
+  }
+}
+
+.menu__item-link--active {
+  @include medium-size {
+    color: #766357;
   }
 }

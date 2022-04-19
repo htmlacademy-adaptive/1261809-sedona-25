@@ -1,6 +1,22 @@
 .advantages__card-image-wrapper {
   display: flex;
   flex-direction: column;
+
+  @include medium-size {
+    flex-direction: row;
+    height: 256px;
+  }
+}
+
+.advantages__card-image-wrapper--even {
+  @include medium-size {
+    flex-direction: row-reverse;
+  }
+}
+
+.advantages__image {
+  object-fit: cover;
+  flex-grow: 1;
 }
 
 .advantages__advantages-card-list {
@@ -8,19 +24,40 @@
   padding: 26px;
   display: flex;
   flex-direction: column;
+
+  @include medium-size {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+  }
 }
 
 .advantages__features {
   display: flex;
   flex-direction: column;
   padding: 25px 18px 52px;
+
+  @include medium-size {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 36px;
+  }
 }
 
 .advantages__feature-card {
   display: flex;
 
-  &:not(:first-child) {
-    margin-top: 25px;
+  @include small-size {
+    &:not(:first-child) {
+      margin-top: 25px;
+    }
+  }
+
+  @include medium-size {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 285px;
   }
 }
 
@@ -31,6 +68,10 @@
   width: 40px;
   height: 40px;
   //костыль, не ясно как управлять размерамии svg из css
+  @include medium-size {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .advantages__feature-icon {
@@ -41,6 +82,10 @@
   display: flex;
   flex-direction: column;
   margin-left: 8px;
+
+  @include medium-size {
+    margin-left: 0;
+  }
 }
 
 .advantages__feature-title {
@@ -51,6 +96,10 @@
   text-transform: uppercase;
 
   @include font-l;
+
+  @include medium-size {
+    margin-top: 26px;
+  }
 }
 
 .advantages__feature-description {

@@ -1,6 +1,14 @@
 .proposal {
   padding: 39px 18px 49px;
   text-align: center;
+
+  @include medium-size {
+    padding: 61px 155px 58px;
+  }
+
+  @include large-size {
+    padding: 61px 371px 66px;
+  }
 }
 
 .proposal__title {
@@ -13,6 +21,8 @@
 .proposal__description {
   margin-top: 20px; //нужно проверять, сделано на глоз
   margin-bottom: 0;
+  padding-left: 12px;
+  padding-right: 12px;
 
   @include font-s;
   text-transform: uppercase;
