@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +15,7 @@
     <button class="menu__toggle-button toggle-button toggle-button--active"></button>
     <ul class="menu__list">
       <li class="menu__item">
-        <a href="#" class="menu__item-link">Главная</a>
+        <a href="#" class="menu__item-link menu__item-link--active">Главная</a>
       </li>
       <li class="menu__item">
         <a href="#" class="menu__item-link">Фото и видео</a>
@@ -83,7 +84,7 @@
         </div>
       </article>
     </div>
-    <div class="advantages__card-image-wrapper">
+    <div class="advantages__card-image-wrapper advantages__card-image-wrapper--even">
       <article class="advantage-card advantage-card--primary">
         <h3 class="advantage-card__title">Там есть мост дьявола</h3>
         <span class="advantage-card__number"> - №2 - </span>
@@ -115,7 +116,9 @@
       седоне</p>
     <a class="proposal__link button button--primary button--link" href="#">Найти гостиницу</a>
   </div>
-  <div class="page-main__map"></div>
+  <div class="page-main__map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15812.450454760907!2d98.29959126580688!3d7.777882559873215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3050261c4e42f6bf%3A0x7e25561bb705c621!2zTmFpIEhhcm4gQmVhY2gsINCg0LDQstCw0LksINCh0YLQvtC70LjRh9C90YvQuSDQsNC80L_RhdC1INCf0YXRg9C60LXRgiwg0J_RhdGD0LrQtdGC!5e0!3m2!1sru!2sth!4v1650543947148!5m2!1sru!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 </main>
 <footer class="page-footer">
   <div class="page-footer__hash-tag">

@@ -5,6 +5,16 @@
   align-items: center;
   padding: 29px 0;
   justify-content: space-between;
+
+  @include medium-size {
+    height: 120px;
+    flex-direction: row;
+    padding: 0 60px;
+  }
+
+  @include medium-size {
+    padding: 0 120px;
+  }
 }
 
 .page-footer__hash-tag {

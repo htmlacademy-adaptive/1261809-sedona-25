@@ -1,3 +1,8 @@
+.page-main__advertising {
+  max-width: 520px;
+  margin: auto;
+}
+
 .page-main__advantages {
   position: relative;
 }
@@ -19,4 +24,9 @@
 
 .page-main__video-player {
   margin-top: 6px;
+}
+
+.page-main__map {
+  height: 350px;
+  overflow: hidden;
 }
