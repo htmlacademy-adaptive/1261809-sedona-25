@@ -3,9 +3,52 @@
   flex-direction: column;
 }
 
+.feedback-form__info-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include medium-size {
+    flex-direction: row;
+    margin-top: 102px;
+    padding: 0 16px;
+  }
+
+  @include large-size {
+    flex-direction: row;
+    margin-top: 67px;
+    padding: 0 56px;
+  }
+}
+
+.feedback-form__info-column {
+  padding: 24px 20px;
+  border-top: 1px solid $background-primary-disabled;
+
+  @include medium-size {
+    flex-basis: 50%;
+    padding: 0 44px 16px;
+    border-top: none;
+  }
+
+  @include large-size {
+    padding: 0 64px 16px;
+    border-top: none;
+  }
+}
+
 .feedback-form__section-wrapper {
   padding: 24px 20px;
   border-top: 1px solid $background-primary-disabled;
+
+  @include medium-size {
+    margin: 48px 60px 0;
+    padding: 0;
+    border-top: none;
+  }
+
+  @include large-size {
+    margin: 73px 120px 0;
+  }
 }
 
 .feedback-form__section {
@@ -19,44 +62,152 @@
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+
+  @include medium-size {
+    @include font-l;
+  }
 }
 
-.feedback-form__inline-group {
+.feedback-form__radio-group {
   display: flex;
-  align-items: flex-start; //чтобы лейблы не занимали 100%
   flex-direction: column;
+  margin-top: 20px;
+
+  @include medium-size {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    padding: 0 36px;
+  }
+
+  @include large-size {
+    margin-top: 45px;
+    padding: 0 53px;
+  }
+}
+
+.feedback-form__checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  @include medium-size {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    padding: 0 84px;
+  }
+
+  @include large-size {
+    margin-top: 59px;
+    padding: 0 44px;
+  }
 }
 
 .feedback-form__block-group {
   display: flex;
   flex-direction: column;
-}
-
-.feedback-form__field-wrapper {
-  margin-top: 16px;
-
-  &:first-child {
-    margin-top: 20px;
-  }
-}
-
-.feedback-form__review {
   margin-top: 20px;
 }
 
+.feedback-form__input-wrapper {
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+
+.feedback-form__radio-wrapper {
+  @include small-size {
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  @include medium-size {
+    flex-basis: 50%;
+    margin-top: 16px;
+
+    &:first-child &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  @include large-size {
+    flex-basis: 33.3%;
+    margin-top: 0;
+  }
+}
+
+.feedback-form__checkbox-wrapper {
+  @include small-size {
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  @include medium-size {
+    flex-basis: 50%;
+    margin-top: 16px;
+
+    &:first-child &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+
+  @include large-size {
+    flex-basis: 25%;
+    margin-top: 0;
+  }
+}
+
 .feedback-form__submit {
-  padding: 32px 20px 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+  padding: 0 20px;
+
+  @include medium-size {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    padding: 0 60px;
+  }
+
+  @include large-size {
+    padding: 0 216px;
+  }
+}
+
+.feedback-form__button-submit-wrapper {
+  @include medium-size {
+    min-width: 324px;
+  }
 }
 
 .feedback-form__tooltip {
-  padding: 3px 20px 24px;
   text-align: right;
   font-size: 12px;
   line-height: $line-height-s;
   color: fade-out($font-color-primary, 0.6);
   text-transform: uppercase;
+
+  @include medium-size {
+    color: $font-color-primary;
+  }
 }
 
 .feedback-form__review-wrapper {
+  margin-top: 20px;
   height: 150px;
+
+  @include medium-size {
+    height: 160px;
+  }
+
+  @include large-size {
+    padding: 0 94px;
+  }
 }
+
