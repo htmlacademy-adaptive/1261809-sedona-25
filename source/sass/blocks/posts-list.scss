@@ -1,0 +1,30 @@
+.posts-list {
+  display: flex;
+  flex-direction: column;
+
+  @include medium-size {
+    padding: 0 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include large-size {
+    padding: 0 0;
+  }
+}
+
+.posts-list__post {
+  width: 100%;
+
+  @include medium-size {
+    width: 50%;
+  }
+
+  @include large-size {
+    width: 33.33%;
+  }
+}
+
+.posts-list__post--main {
+  width: 100%;
+}

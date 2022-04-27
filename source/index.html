@@ -159,4 +159,14 @@
   </div>
 </footer>
 </body>
+<script>
+  const ro = new ResizeObserver(entries => {
+    for (const entry of entries) {
+      console.log(entry.contentRect.width, 'px')
+    }
+  });
+
+  // мы можем следить за любым количеством элементов
+  ro.observe(document.querySelector('.page-main__intro'))
+</script>
 </html>

@@ -10,6 +10,12 @@
   text-transform: uppercase;
 }
 
+.advertising__title--large {
+  @include medium-size {
+    @include font-xl;
+  }
+}
+
 .advertising__description {
   margin: 0;
   padding-top: 35px;

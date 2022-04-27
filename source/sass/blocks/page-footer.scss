@@ -17,6 +17,14 @@
   }
 }
 
+.page-footer__wrapper {
+  margin-top: 24px;
+
+  @include medium-size {
+    margin-top: 64px;
+  }
+}
+
 .page-footer__hash-tag {
   @include font-l;
   text-transform: uppercase;
