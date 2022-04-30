@@ -1,3 +1,39 @@
-.intro__image {
+.intro {
+  width: 100%;
+  height: 389px;
+  position: relative;
   display: block;
+  background-image: url("../img/intro.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include medium-size {
+    height: 518px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 57px;
+    background-image: url("../img/intro-triangle.svg");
+  }
+}
+
+.intro__image {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include medium-size {
+    top: 77px;
+    width: 461px;
+    height: 350px;
+  }
 }

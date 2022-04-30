@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/app.js" defer></script>
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -12,10 +13,11 @@
     <img class="page-header__logo-image" width="185" height="96" src="img/logo.svg" alt="logo">
   </a>
   <nav class="page-header__menu menu">
-    <button class="menu__toggle-button toggle-button toggle-button--active"></button>
-    <ul class="menu__list">
+    <button class="menu__toggle-button toggle-button">
+    </button>
+    <ul class="menu__list menu__list--hidden">
       <li class="menu__item">
-        <a href="#" class="menu__item-link">Главная</a>
+        <a href="#" class="menu__item-link menu__item-link--active">Главная</a>
       </li>
       <li class="menu__item">
         <a href="#" class="menu__item-link">Фото и видео</a>
@@ -34,7 +36,7 @@
 <main class="page-main">
   <h1 class="visually-hidden">Фото и видео Седоны</h1>
   <div class="page-main__intro intro">
-    <img class="intro__image" width="100%" src="img/intro.svg" alt="sedona">
+    <img class="intro__image" src="img/text-intro-sedona.svg" alt="sedona" width="229" height="39">
   </div>
   <div class="page-main__advertising advertising">
     <h2 class="advertising__title advertising__title--large">Фото и видео</h2>

@@ -1,48 +1,57 @@
 .advantage-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 16px;
   text-align: center;
   text-transform: uppercase;
-
-  @include medium-size {
-    width: 256px;
-    min-height: 256px;
-    padding: 40px;
-  }
-
-  @include large-size {
-    width: 400px;
-    padding: 50px 80px;
-  }
 }
 
 .advantage-card--primary {
   background-color: $background-primary;
   color: $font-color-secondary;
+
+  padding: 39px 16px 35px;
+
+  @include medium-size {
+    padding: 42px 32px;
+    width: 256px;
+    min-height: 256px;
+  }
+
+  @include large-size {
+    padding: 50px 78px;
+    width: 400px;
+  }
 }
 
 .advantage-card__item-wrapper {
+  position: relative;
+  padding-left: 24px;
+  padding-right: 24px;
+
   @include small-size {
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    &:first-child {
-      padding-top: 0;
-    }
-
-    &:last-child {
-      padding-bottom: 0;
-    }
-
     &:not(:last-child) {
-      border-bottom: 1px solid #d6d6d6;
+      padding-bottom: 24px;
+
+      &::after { /* stylelint-disable-line */
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #d6d6d6;
+      }
+    }
+
+    &:not(:first-child) {
+      padding-top: 24px;
     }
   }
 
   @include medium-size {
-    border-bottom: none;
+    padding: 42px 32px;
+    width: 256px;
+    min-height: 256px;
   }
 }
 
@@ -54,20 +63,12 @@
     &::before {
       content: "";
       position: absolute;
-      height: 6px;
+      height: 22px;
       width: 100%;
-      top: 0;
+      top: -1px;
       left: 0;
       background-color: $background-secondary;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 6px;
-      left: 0;
-      border: 50vw solid transparent;
-      border-top: 20px solid $background-secondary;
+      clip-path: polygon(0 0, 100% 0, 100% 6px, 50% 22px, 0 6px);
     }
   }
 }
@@ -82,6 +83,10 @@
   margin-top: 11px;
 
   @include font-s;
+
+  @include medium-size {
+    margin-top: 19px;
+  }
 }
 
 .advantage-card__description {

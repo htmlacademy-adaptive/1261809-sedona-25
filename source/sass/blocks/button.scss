@@ -5,6 +5,7 @@
   padding-bottom: 16px;
   cursor: pointer;
   border: none;
+  transition: 0.3s;
 
   @include font-l;
   text-transform: uppercase;
@@ -16,6 +17,20 @@
 .button--primary {
   color: $font-color-secondary;
   background-color: $background-primary;
+
+  &:hover {
+    background-color: $background-primary-hoover;
+  }
+
+  &:active {
+    color: fade-out($font-color-secondary, 0.3);
+    background-color: $background-primary-down;
+  }
+
+  &:disabled {
+    background-color: $background-primary-disabled;
+    cursor: auto;
+  }
 }
 
 .button--link {
