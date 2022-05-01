@@ -3,9 +3,27 @@
   align-items: center;
   text-decoration: none;
   color: $font-color-primary;
+  transition: 0.3s;
+
+  &:hover {
+    color: $font-color-primary-hover;
+  }
+
+  &:hover > .dev-info__link-icon {
+    fill: $font-color-primary-hover;
+  }
+
+  &:active {
+    color: $font-color-primary-down;
+  }
+
+  &:active > .dev-info__link-icon {
+    fill: $font-color-primary-down;
+  }
 }
 
 .dev-info__link-icon {
+  transition: 0.3s;
   margin-left: 15px;
 }
 

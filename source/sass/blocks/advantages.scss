@@ -61,21 +61,13 @@
   }
 }
 
-.advantages__feature-icon-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  //костыль, не ясно как управлять размерамии svg из css
+.advantages__feature-icon {
+  fill: $background-primary;
+
   @include medium-size {
     width: 75px;
     height: 75px;
   }
-}
-
-.advantages__feature-icon {
-  fill: $background-primary;
 }
 
 .advantages__feature-content-wrapper {
