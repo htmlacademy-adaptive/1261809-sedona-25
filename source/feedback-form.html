@@ -17,26 +17,26 @@
     </button>
     <ul class="menu__list menu__list--hidden">
       <li class="menu__item">
-        <a href="#" class="menu__item-link menu__item-link--active">Главная</a>
+        <a href="index.html" class="menu__item-link menu__item-link--active">Главная</a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__item-link">Фото и видео</a>
+        <a href="catalog.html" class="menu__item-link">Фото и видео</a>
       </li>
       <li class="menu__item menu__item-empty">
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__item-link">Форма Отзыва</a>
+        <a href="feedback-form.html" class="menu__item-link">Форма Отзыва</a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__item-link">HTML ACADEMY</a>
+        <a href="https://htmlacademy.ru/" class="menu__item-link">HTML ACADEMY</a>
       </li>
     </ul>
   </nav>
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Седона. Форма обратной связи</h1>
-  <div class="page-main__intro intro">
-    <img class="intro__image" src="img/text-intro-sedona.svg" alt="sedona" width="229" height="39">
+  <div class="page-main__intro intro intro--short">
+    <img class="intro__image intro__image--short" src="img/text-intro-sedona.svg" alt="sedona" width="229" height="39">
   </div>
   <div class="page-main__advertising advertising">
     <h2 class="advertising__title advertising__title--large">Оставьте свой отзыв</h2>
@@ -82,7 +82,9 @@
     </div>
     <div class="feedback-form__section-wrapper">
       <fieldset class="feedback-form__section">
-        <legend class="feedback-form__section-title">Ваше общее впечатление:</legend>
+        <div class="feedback-form__section-title-wrapper">
+          <legend class="feedback-form__section-title">Ваше общее впечатление:</legend>
+        </div>
         <div class="feedback-form__radio-group">
           <div class="feedback-form__radio-wrapper">
             <label class=" feedback-form__radio radio">
@@ -110,7 +112,9 @@
     </div>
     <div class="feedback-form__section-wrapper">
       <fieldset class="feedback-form__section">
-        <legend class="feedback-form__section-title">посещенные достопримечательности:</legend>
+        <div class="feedback-form__section-title-wrapper">
+          <legend class="feedback-form__section-title">посещенные достопримечательности:</legend>
+        </div>
         <div class="feedback-form__checkbox-group">
           <div class="feedback-form__checkbox-wrapper">
             <label class="feedback-form__field-wrapper feedback-form__checkbox checkbox">
@@ -145,7 +149,9 @@
     </div>
     <div class="feedback-form__section-wrapper">
       <fieldset class="feedback-form__section">
-        <legend class="feedback-form__section-title">Опишите свои эмоции:</legend>
+        <div class="feedback-form__section-title-wrapper">
+          <legend class="feedback-form__section-title">Опишите свои эмоции:</legend>
+        </div>
         <div class="feedback-form__review-wrapper">
           <textarea class="feedback-form__review textarea" name="review"
                     placeholder="Опишите подробно все свои восторги"></textarea>
@@ -190,7 +196,7 @@
     </ul>
   </div>
   <div class="page-footer__dev-info dev-info">
-    <a class="dev-info__link" href="#" aria-label="html-academy">
+    <a class="dev-info__link" href="https://htmlacademy.ru/" aria-label="html-academy">
       <span class="dev-info__link-text">Разработано</span>
       <svg class="dev-info__link-icon" width="27" height="35">
         <use xlink:href="img/sprite-icons.svg#html-academy"></use>

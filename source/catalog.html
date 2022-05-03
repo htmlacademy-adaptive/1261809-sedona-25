@@ -17,26 +17,26 @@
     </button>
     <ul class="menu__list menu__list--hidden">
       <li class="menu__item">
-        <a href="#" class="menu__item-link menu__item-link--active">Главная</a>
+        <a href="index.html" class="menu__item-link menu__item-link--active">Главная</a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__item-link">Фото и видео</a>
+        <a href="catalog.html" class="menu__item-link">Фото и видео</a>
       </li>
       <li class="menu__item menu__item-empty">
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__item-link">Форма Отзыва</a>
+        <a href="feedback-form.html" class="menu__item-link">Форма Отзыва</a>
       </li>
       <li class="menu__item">
-        <a href="#" class="menu__item-link">HTML ACADEMY</a>
+        <a href="https://htmlacademy.ru/" class="menu__item-link">HTML ACADEMY</a>
       </li>
     </ul>
   </nav>
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Фото и видео Седоны</h1>
-  <div class="page-main__intro intro">
-    <img class="intro__image" src="img/text-intro-sedona.svg" alt="sedona" width="229" height="39">
+  <div class="page-main__intro intro intro--short">
+    <img class="intro__image intro__image--short" src="img/text-intro-sedona.svg" alt="sedona" width="229" height="39">
   </div>
   <div class="page-main__advertising advertising">
     <h2 class="advertising__title advertising__title--large">Фото и видео</h2>
@@ -52,7 +52,7 @@
           <div class="post__owner">Автор фото: Борис</div>
         </div>
         <div class="post__favorite">
-          <button class="post__favorite-button">
+          <button class="post__favorite-button" aria-label="favorite">
             <svg class="post__favorite-icon" width="23" height="21">
               <use xlink:href="img/sprite-icons.svg#favorite"></use>
             </svg>
@@ -69,7 +69,7 @@
           <div class="post__owner">Автор фото: Сергей</div>
         </div>
         <div class="post__favorite">
-          <button class="post__favorite-button">
+          <button class="post__favorite-button" aria-label="favorite">
             <svg class="post__favorite-icon" width="23" height="21">
               <use xlink:href="img/sprite-icons.svg#favorite"></use>
             </svg>
@@ -86,7 +86,7 @@
           <div class="post__owner">Автор фото: Петр</div>
         </div>
         <div class="post__favorite">
-          <button class="post__favorite-button">
+          <button class="post__favorite-button" aria-label="favorite">
             <svg class="post__favorite-icon" width="23" height="21">
               <use xlink:href="img/sprite-icons.svg#favorite"></use>
             </svg>
@@ -103,7 +103,7 @@
           <div class="post__owner">Автор фото: Антон</div>
         </div>
         <div class="post__favorite">
-          <button class="post__favorite-button">
+          <button class="post__favorite-button" aria-label="favorite">
             <svg class="post__favorite-icon" width="23" height="21">
               <use xlink:href="img/sprite-icons.svg#favorite"></use>
             </svg>
@@ -121,22 +121,9 @@
   <div class="page-main__video-player video-player">
     <div class="video-player__screen">
       <img class="video-player__screen-image" src="img/video-mobile.jpg" alt="video screen">
-    </div>
-    <div class="video-player__control-elements">
-      <div class="video-player__progress-bar"></div>
-      <button class="video-player__button">
-        <svg class="video-player-icon" width="16" height="20">
-          <use xlink:href="img/sprite-icons.svg#replay"></use>
-        </svg>
-      </button>
-      <button class="video-player__button">
-        <svg class="video-player-icon" width="32" height="20">
-          <use xlink:href="img/sprite-icons.svg#subtitles"></use>
-        </svg>
-      </button>
-      <button class="video-player__button">
-        <svg class="video-player-icon" width="20" height="20">
-          <use xlink:href="img/sprite-icons.svg#fullscreen"></use>
+      <button class="video-player__button-play" aria-label="play">
+        <svg class="video-player-icon" width="48" height="54">
+          <use xlink:href="img/sprite-icons.svg#play"></use>
         </svg>
       </button>
     </div>
@@ -149,7 +136,7 @@
   <div class="page-footer__socials socials">
     <ul class="socials__list">
       <li class="socials__item">
-        <a class="socials__link" href="#">
+        <a class="socials__link" href="https://htmlacademy.ru/">
           <svg class="socials__icon" width="18" height="15">
             <use xlink:href="img/sprite-icons.svg#twitter"></use>
           </svg>

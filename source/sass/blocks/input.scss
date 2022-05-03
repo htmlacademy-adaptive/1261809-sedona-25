@@ -1,16 +1,26 @@
 .input {
   position: relative;
-  box-sizing: border-box;
   display: block;
   padding: 16px;
   width: 100%;
   background-color: $background-input-primary;
   border: none;
+  transition: 0.3s;
 
   @include font-m;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   color: $font-color-primary;
+
+  &:hover {
+    background-color: $background-input-primary-hover;
+  }
+
+  &:focus {
+    background-color: $background-secondary;
+    outline: 4px solid $background-input-primary-hover;
+    outline-offset: -4px;
+  }
 
   &::placeholder {
     font-weight: bold;

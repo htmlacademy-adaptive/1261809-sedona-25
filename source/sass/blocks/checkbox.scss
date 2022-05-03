@@ -1,3 +1,12 @@
+@mixin checkbox-icon-mixin {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 12px;
+  width: 23px;
+  height: 16px;
+}
+
 .checkbox {
   position: relative;
   display: inline-flex;
@@ -12,7 +21,12 @@
   width: 46px;
   height: 46px;
   border-radius: 4px;
+  transition: 0.3s;
   background-color: $background-input-primary;
+
+  &:hover {
+    background-color: $background-input-primary-hover;
+  }
 }
 
 .checkbox__label {
@@ -25,13 +39,21 @@
 
   &:checked + .checkbox__icon {
     &::after {
-      position: absolute;
-      content: "";
-      top: 15px;
-      left: 12px;
-      width: 23px;
-      height: 16px;
+      @include checkbox-icon-mixin;
       background-image: url("../img/checked.svg");
+    }
+  }
+
+  &:focus + .checkbox__icon {
+    background-color: $background-secondary;
+    outline: 4px solid $background-input-primary-hover;
+    outline-offset: -4px;
+  }
+
+  &:active + .checkbox__icon {
+    &::after {
+      @include checkbox-icon-mixin;
+      background-image: url("../img/checked-active.svg");
     }
   }
 }

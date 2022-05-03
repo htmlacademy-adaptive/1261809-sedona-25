@@ -1,3 +1,17 @@
+$feedback-form-border-color: #dbdbdb;
+
+@mixin pseudo-border-top {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $feedback-form-border-color;
+  }
+}
+
 .feedback-form {
   display: flex;
   flex-direction: column;
@@ -21,13 +35,28 @@
 }
 
 .feedback-form__info-column {
+  position: relative;
   padding: 24px 20px;
-  border-top: 1px solid $background-primary-disabled;
+
+  @include small-size {
+    @include pseudo-border-top;
+  }
 
   @include medium-size {
     flex-basis: 50%;
     padding: 0 44px 16px;
-    border-top: none;
+
+    &:first-child {
+      &::before { /* stylelint-disable-line */
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: $feedback-form-border-color;
+      }
+    }
   }
 
   @include large-size {
@@ -37,13 +66,16 @@
 }
 
 .feedback-form__section-wrapper {
+  position: relative;
   padding: 24px 20px;
-  border-top: 1px solid $background-primary-disabled;
+
+  @include small-size {
+    @include pseudo-border-top;
+  }
 
   @include medium-size {
     margin: 48px 60px 0;
     padding: 0;
-    border-top: none;
   }
 
   @include large-size {
@@ -57,13 +89,41 @@
   border: none;
 }
 
+.feedback-form__section-title-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @include medium-size {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: -1;
+      background-color: $feedback-form-border-color;
+    }
+  }
+}
+
 .feedback-form__section-title {
+  background-color: $background-secondary;
+  padding: 0;
+  display: block;
+
   @include font-m;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 
   @include medium-size {
+    max-width: 402px;
+    padding-left: 60px;
+    padding-right: 60px;
+
     @include font-l;
   }
 }
