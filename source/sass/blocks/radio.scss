@@ -1,3 +1,14 @@
+@mixin radio-icon-mixin {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
 .radio {
   position: relative;
   display: inline-flex;
@@ -13,6 +24,11 @@
   height: 46px;
   border-radius: 50%;
   background-color: $background-input-primary;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $background-input-primary-hover;
+  }
 }
 
 .radio__label {
@@ -25,15 +41,23 @@
 
   &:checked + .radio__icon {
     &::after {
-      position: absolute;
-      content: "";
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
+      @include radio-icon-mixin;
       background-color: $label-color;
+    }
+  }
+
+  &:focus + .radio__icon {
+    background-color: $background-secondary;
+    outline: 4px solid $background-input-primary-hover;
+    outline-offset: -4px;
+  }
+
+  &:active + .radio__icon {
+    background-color: $background-input-primary-down;
+
+    &::after {
+      @include radio-icon-mixin;
+      background-color: fade-out($label-color, 0.7);
     }
   }
 }

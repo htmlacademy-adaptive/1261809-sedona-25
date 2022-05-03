@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 
   @include medium-size {
     height: 518px;
@@ -15,13 +16,25 @@
   &::after {
     content: "";
     position: absolute;
-    z-index: 1;
-    bottom: 0;
+    bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
-    width: 1200px;
+    width: 1202px;
     height: 57px;
     background-image: url("../img/intro-triangle.svg");
+    background-size: cover;
+  }
+}
+
+.intro--short {
+  height: 158px;
+
+  @include medium-size {
+    height: 290px;
+  }
+
+  @include large-size {
+    height: 301px;
   }
 }
 
@@ -35,5 +48,19 @@
     top: 77px;
     width: 461px;
     height: 350px;
+  }
+}
+
+.intro__image--short {
+  top: 52px;
+
+  @include medium-size {
+    top: 95px;
+    width: 457px;
+    height: 78px;
+  }
+
+  @include large-size {
+    top: 102px;
   }
 }
