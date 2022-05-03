@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/app.js" defer></script>
+  <base href="https://htmlacademy-adaptive.github.io/1261809-sedona-25/8/">
+</head>
+<body class="page__body">
+<header class="page-header">
+  <a href="" class="page-header__logo">
+    <img class="page-header__logo-image" width="185" height="96" src="img/logo.svg" alt="logo">
+  </a>
+  <nav class="page-header__menu menu">
+    <button class="menu__toggle-button toggle-button">
+    </button>
+    <ul class="menu__list menu__list--hidden">
+      <li class="menu__item">
+        <a href="index.html" class="menu__item-link menu__item-link--active">Главная</a>
+      </li>
+      <li class="menu__item">
+        <a href="catalog.html" class="menu__item-link">Фото и видео</a>
+      </li>
+      <li class="menu__item menu__item-empty">
+      </li>
+      <li class="menu__item">
+        <a href="feedback-form.html" class="menu__item-link">Форма Отзыва</a>
+      </li>
+      <li class="menu__item">
+        <a href="https://htmlacademy.ru/" class="menu__item-link">HTML ACADEMY</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="page-main">
+  <h1 class="visually-hidden">Фото и видео Седоны</h1>
+  <div class="page-main__intro intro intro--short">
+    <img class="intro__image intro__image--short" src="img/text-intro-sedona.svg" alt="sedona" width="229" height="39">
+  </div>
+  <div class="page-main__advertising advertising">
+    <h2 class="advertising__title advertising__title--large">Фото и видео</h2>
+    <p class="advertising__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+      политике и экономике.</p>
+  </div>
+  <section class="page-main__posts-list posts-list">
+    <article class="posts-list__post post posts-list__post--main">
+      <img class="post__image post__image--main" src="img/photo-1-mobile.jpg" alt="photo-1">
+      <div class="post__description">
+        <div class="post__content">
+          <h3 class="post__title">Народные просторы</h3>
+          <div class="post__owner">Автор фото: Борис</div>
+        </div>
+        <div class="post__favorite">
+          <button class="post__favorite-button" aria-label="favorite">
+            <svg class="post__favorite-icon" width="23" height="21">
+              <use xlink:href="img/sprite-icons.svg#favorite"></use>
+            </svg>
+          </button>
+          <span class="post__favorites-count">1350</span>
+        </div>
+      </div>
+    </article>
+    <article class="posts-list__post post">
+      <img class="post__image" src="img/photo-2-mobile.jpg" alt="photo-2">
+      <div class="post__description">
+        <div class="post__content">
+          <h3 class="post__title">Местная растительность</h3>
+          <div class="post__owner">Автор фото: Сергей</div>
+        </div>
+        <div class="post__favorite">
+          <button class="post__favorite-button" aria-label="favorite">
+            <svg class="post__favorite-icon" width="23" height="21">
+              <use xlink:href="img/sprite-icons.svg#favorite"></use>
+            </svg>
+          </button>
+          <span class="post__favorites-count">143</span>
+        </div>
+      </div>
+    </article>
+    <article class="posts-list__post post">
+      <img class="post__image" src="img/photo-3-mobile.jpg" alt="photo-3">
+      <div class="post__description">
+        <div class="post__content">
+          <h3 class="post__title">Дорога на север</h3>
+          <div class="post__owner">Автор фото: Петр</div>
+        </div>
+        <div class="post__favorite">
+          <button class="post__favorite-button" aria-label="favorite">
+            <svg class="post__favorite-icon" width="23" height="21">
+              <use xlink:href="img/sprite-icons.svg#favorite"></use>
+            </svg>
+          </button>
+          <span class="post__favorites-count">96</span>
+        </div>
+      </div>
+    </article>
+    <article class="posts-list__post post">
+      <img class="post__image" src="img/photo-4-mobile.jpg" alt="photo-4">
+      <div class="post__description">
+        <div class="post__content">
+          <h3 class="post__title">Мост дьявола</h3>
+          <div class="post__owner">Автор фото: Антон</div>
+        </div>
+        <div class="post__favorite">
+          <button class="post__favorite-button" aria-label="favorite">
+            <svg class="post__favorite-icon" width="23" height="21">
+              <use xlink:href="img/sprite-icons.svg#favorite"></use>
+            </svg>
+          </button>
+          <span class="post__favorites-count">254</span>
+        </div>
+      </div>
+    </article>
+  </section>
+  <div class="page-main__advertising advertising">
+    <h2 class="advertising__title advertising__title--large">Все еще сомневаетесь</h2>
+    <p class="advertising__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+      очередной раз!</p>
+  </div>
+  <div class="page-main__video-player video-player">
+    <div class="video-player__screen">
+      <img class="video-player__screen-image" src="img/video-mobile.jpg" alt="video screen">
+      <button class="video-player__button-play" aria-label="play">
+        <svg class="video-player-icon" width="48" height="54">
+          <use xlink:href="img/sprite-icons.svg#play"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__hash-tag">
+    #visitSEDONA
+  </div>
+  <div class="page-footer__socials socials">
+    <ul class="socials__list">
+      <li class="socials__item">
+        <a class="socials__link" href="https://htmlacademy.ru/">
+          <svg class="socials__icon" width="18" height="15">
+            <use xlink:href="img/sprite-icons.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon" width="9" height="19">
+            <use xlink:href="img/sprite-icons.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon" width="20" height="14">
+            <use xlink:href="img/sprite-icons.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-footer__dev-info dev-info">
+    <a class="dev-info__link" href="#">
+      <span class="dev-info__link-text">Разработано</span>
+      <svg class="dev-info__link-icon" width="27" height="35">
+        <use xlink:href="img/sprite-icons.svg#html-academy"></use>
+      </svg>
+    </a>
+  </div>
+</footer>
+</body>
+</html>
