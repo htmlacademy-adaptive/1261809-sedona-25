@@ -14,9 +14,12 @@
   }
 }
 
+.advantages__image-wrapper {
+  flex-grow: 1;
+}
+
 .advantages__image {
   object-fit: cover;
-  flex-grow: 1;
 }
 
 .advantages__advantages-card-list {

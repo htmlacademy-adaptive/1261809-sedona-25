@@ -3,14 +3,23 @@
   height: 389px;
   position: relative;
   display: block;
-  background-image: url("../img/intro.jpg");
+  background-image: url("../img/intro-s-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   overflow: hidden;
 
+  @include small-size-resolution-2x {
+    background-image: url("../img/intro-s-2x.jpg");
+  }
+
   @include medium-size {
     height: 518px;
+    background-image: url("../img/intro-m-1x.jpg");
+  }
+
+  @include medium-size-resolution-2x {
+    background-image: url("../img/intro-m-2x.jpg");
   }
 
   &::after {
