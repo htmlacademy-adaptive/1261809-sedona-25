@@ -109,15 +109,22 @@
 
 .intro--short {
   height: 158px;
+  background-image: url("../img/short-intro-s-1x.jpg");
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .intro--short {
+    background-image: url("../img/short-intro-s-2x.jpg");
+  }
 }
 @media (min-width: 768px) {
   .intro--short {
     height: 290px;
+    background-image: url("../img/short-intro-m-1x.jpg");
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .intro--short {
-    height: 301px;
+    background-image: url("../img/short-intro-m-2x.jpg");
   }
 }
 
