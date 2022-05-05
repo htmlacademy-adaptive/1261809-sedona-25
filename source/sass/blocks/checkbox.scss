@@ -40,7 +40,8 @@
   &:checked + .checkbox__icon {
     &::after {
       @include checkbox-icon-mixin;
-      background-image: url("../img/checked.svg");
+      background-color: $label-color;
+      mask-image: url("../img/checked.svg");
     }
   }
 
@@ -53,7 +54,8 @@
   &:active + .checkbox__icon {
     &::after {
       @include checkbox-icon-mixin;
-      background-image: url("../img/checked-active.svg");
+      background-color: fade-out($label-color, 0.7);
+      mask-image: url("../img/checked.svg");
     }
   }
 }

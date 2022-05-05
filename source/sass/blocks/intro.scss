@@ -37,13 +37,19 @@
 
 .intro--short {
   height: 158px;
+  background-image: url("../img/short-intro-s-1x.jpg");
+
+  @include small-size-resolution-2x {
+    background-image: url("../img/short-intro-s-2x.jpg");
+  }
 
   @include medium-size {
     height: 290px;
+    background-image: url("../img/short-intro-m-1x.jpg");
   }
 
-  @include large-size {
-    height: 301px;
+  @include medium-size-resolution-2x {
+    background-image: url("../img/short-intro-m-2x.jpg");
   }
 }
 
