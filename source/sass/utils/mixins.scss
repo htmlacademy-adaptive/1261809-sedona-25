@@ -4,8 +4,20 @@
   }
 }
 
+@mixin large-size-resolution-2x {
+  @media (min-width: $large-width) and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
 @mixin medium-size {
   @media (min-width: $medium-width) {
+    @content;
+  }
+}
+
+@mixin medium-size-resolution-2x {
+  @media (min-width: $medium-width) and (min-resolution: 2dppx) {
     @content;
   }
 }
@@ -15,6 +27,13 @@
     @content;
   }
 }
+
+@mixin small-size-resolution-2x {
+  @media (max-width: $small-width) and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
 
 @mixin font-s {
   font-size: $font-size-s;
