@@ -1,14 +1,14 @@
-.advantages__card-image-wrapper {
+.advantages__card-wrapper {
   display: flex;
   flex-direction: column;
 
   @include medium-size {
     flex-direction: row;
-    height: 256px;
+    min-height: 256px;
   }
 }
 
-.advantages__card-image-wrapper--even {
+.advantages__card-wrapper--even {
   @include medium-size {
     flex-direction: row-reverse;
   }
@@ -19,6 +19,7 @@
 }
 
 .advantages__image {
+  display: block;
   object-fit: cover;
 }
 

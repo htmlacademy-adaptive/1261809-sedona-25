@@ -16,17 +16,16 @@
 }
 
 .menu__list {
-  height: 56px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: 0;
   padding: 0;
   list-style: none;
+  grid-template-columns: 1fr;
 
   @include medium-size {
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    min-height: 56px;
+    grid-template-columns: repeat(5, 1fr);
     background-color: transparent;
   }
 }
@@ -40,11 +39,9 @@
 
 .menu__item {
   position: relative;
-  flex-basis: 20%;
 
   @include small-size {
     &::after {
-      z-index: 1;
       position: absolute;
       bottom: 0;
       left: 0;
