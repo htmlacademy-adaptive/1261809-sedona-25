@@ -21,6 +21,9 @@
 .advantages__image {
   display: block;
   object-fit: cover;
+  @include medium-size {
+    height: 256px;
+  }
 }
 
 .advantages__advantages-card-list {
@@ -34,17 +37,26 @@
     padding: 0;
     justify-content: space-between;
   }
+
+  @include large-size {
+    padding: 0 44px;
+    justify-content: space-between;
+  }
 }
 
 .advantages__features {
   display: flex;
   flex-direction: column;
-  padding: 25px 18px 52px;
+  padding: 21px 18px 68px;
 
   @include medium-size {
     flex-direction: row;
     justify-content: space-between;
-    padding: 60px 36px;
+    padding: 60px 35px;
+  }
+
+  @include large-size {
+    padding: 60px 55px 100px;
   }
 }
 
@@ -53,7 +65,7 @@
 
   @include small-size {
     &:not(:first-child) {
-      margin-top: 25px;
+      margin-top: 36px;
     }
   }
 
@@ -61,11 +73,16 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 285px;
+    width: 192px;
+  }
+
+  @include large-size {
+    width: 290px;
   }
 }
 
 .advantages__feature-icon {
+  flex-shrink: 0;
   fill: $background-primary;
 
   @include medium-size {
@@ -77,31 +94,39 @@
 .advantages__feature-content-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 8px;
+  margin-left: 12px;
+  margin-top: 10px;
 
   @include medium-size {
     margin-left: 0;
+    margin-top: 0;
   }
 }
 
 .advantages__feature-title {
-  position: relative;
-  top: 8px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: bold;
   text-transform: uppercase;
 
-  @include font-l;
+  @include font-m;
 
   @include medium-size {
-    margin-top: 26px;
+    margin-top: 23px;
   }
 }
 
 .advantages__feature-description {
-  margin-top: 16px;
-  margin-bottom: 0;
+  margin: 0;
   text-transform: uppercase;
 
   @include font-s;
+
+  @include medium-size {
+    margin-top: 22px;
+  }
+
+  @include large-size {
+    margin-top: 5px;
+  }
 }

@@ -1,6 +1,6 @@
 .post {
   position: relative;
-  padding: 24px 20px;
+  padding: 24px 20px 26px;
 
   @include medium-size {
     padding: 0;
@@ -25,15 +25,18 @@
 }
 
 .post__description {
-  padding: 15px 0;
   display: flex;
   flex-direction: column;
+
+  @include small-size {
+    margin-top: 14px;
+  }
 
   @include medium-size {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px 15px;
+    padding: 22px 20px 16px;
     background-color: $background-input-primary;
   }
 
@@ -59,15 +62,13 @@
 }
 
 .post__owner {
-  margin-top: 4px;
-
   @include large-size {
     color: $font-color-secondary;
   }
 }
 
 .post__favorite {
-  margin-top: 16px;
+  margin-top: 18px;
   position: relative;
 
   @include medium-size {
@@ -80,7 +81,7 @@
 }
 
 .post__favorite-button {
-  top: -7px;
+  top: -10px;
   left: 0;
   position: absolute;
   padding: 4px;
@@ -100,5 +101,5 @@
 .post__favorites-count {
   @include font-s;
   font-weight: bold;
-  padding-left: 42px;
+  padding-left: 35px;
 }

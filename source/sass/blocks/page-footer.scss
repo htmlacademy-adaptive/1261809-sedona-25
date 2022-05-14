@@ -1,9 +1,9 @@
 .page-footer {
-  height: 230px;
+  height: 233px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 29px 0;
+  padding: 29px 0 23px;
   justify-content: space-between;
 
   @include medium-size {
@@ -12,7 +12,7 @@
     padding: 0 60px;
   }
 
-  @include medium-size {
+  @include large-size {
     padding: 0 120px;
   }
 }
