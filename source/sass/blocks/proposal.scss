@@ -1,5 +1,5 @@
 .proposal {
-  padding: 39px 18px 49px;
+  padding: 39px 17px 49px;
   text-align: center;
 
   @include medium-size {
@@ -16,6 +16,10 @@
 
   @include font-l;
   text-transform: uppercase;
+
+  @include medium-size {
+    @include font-xl;
+  }
 }
 
 .proposal__description {
@@ -26,8 +30,16 @@
 
   @include font-s;
   text-transform: uppercase;
+
+  @include medium-size {
+    margin-top: 31px;
+  }
 }
 
 .proposal__link {
   margin-top: 32px;
+
+  @include medium-size {
+    margin-top: 43px;
+  }
 }

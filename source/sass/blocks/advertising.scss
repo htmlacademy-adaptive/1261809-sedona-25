@@ -1,5 +1,5 @@
 .advertising {
-  padding: 32px 18px;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -8,6 +8,10 @@
 
   @include font-m;
   text-transform: uppercase;
+
+  @include medium-size {
+    @include font-l;
+  }
 }
 
 .advertising__title--large {
@@ -17,9 +21,13 @@
 }
 
 .advertising__description {
-  margin: 0;
-  padding-top: 35px;
+  margin-top: 24px;
+  margin-bottom: 0;
 
   @include font-s;
   text-transform: uppercase;
+
+  @include medium-size {
+    margin-top: 29px
+  }
 }

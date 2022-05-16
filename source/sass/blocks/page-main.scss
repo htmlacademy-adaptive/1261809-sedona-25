@@ -1,9 +1,63 @@
-.page-main__advertising {
+//из-за кривого дизайна
+.page-main__advertising-form {
   max-width: 520px;
-  margin: auto;
+  margin: 33px auto 0;
+
+  @include medium-size {
+    margin-top: 61px;
+  }
+
+  @include medium-size {
+    margin-top: 112px;
+  }
+}
+
+.page-main__advertising-top-index {
+  margin: 33px auto 0;
+  padding: 0 24px;
+  max-width: 520px;
+
+  @include medium-size {
+    padding: 0;
+    margin: 46px auto 59px;
+  }
+
+  @include large-size {
+    margin: 60px auto 44px;
+  }
+}
+
+.page-main__advertising-top-catalog {
+  margin: 33px auto 0;
+  padding: 0 24px;
+  max-width: 520px;
+
+  @include medium-size {
+    margin-top: 60px;
+  }
+
+  @include large-size {
+    margin-top: 98px;
+  }
+}
+
+.page-main__advertising-bottom-index {
+  margin: 19px auto 29px;
+  max-width: 520px;
+}
+
+.page-main__advertising-bottom-catalog {
+  margin: 18px auto 0;
+  max-width: 520px;
+
+  @include medium-size {
+    margin-top: 58px;
+  }
+
 }
 
 .page-main__advantages {
+  margin-top: 33px;
   position: relative;
 }
 
@@ -19,18 +73,39 @@
 }
 
 .page-main__posts-list {
-  margin-top: 20px;
-}
-
-.page-main__video-player {
-  margin-top: 6px;
+  margin-top: 42px;
 
   @include medium-size {
     margin-top: 90px;
+  }
+
+  @include large-size {
+    margin-top: 92px;
+  }
+}
+
+.page-main__video-player {
+  margin-top: 41px;
+
+  @include medium-size {
+    margin-top: 90px;
+    margin-bottom: 42px;
+  }
+
+  @include large-size {
+    margin-bottom: 88px;
   }
 }
 
 .page-main__map {
   height: 350px;
   overflow: hidden;
+}
+
+.page-main__feedback-form {
+  margin-top: 31px;
+
+  @include medium-size {
+    margin-top: 0;
+  }
 }
